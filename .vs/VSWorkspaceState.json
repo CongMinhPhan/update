@@ -1,0 +1,14 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\WebBanHangOnline",
+    "\\WebBanHangOnline\\WebBanHangOnline",
+    "\\WebBanHangOnline\\WebBanHangOnline\\Areas",
+    "\\WebBanHangOnline\\WebBanHangOnline\\Areas\\Admin",
+    "\\WebBanHangOnline\\WebBanHangOnline\\Areas\\Admin\\Controllers",
+    "\\WebBanHangOnline\\WebBanHangOnline\\Areas\\Admin\\Views",
+    "\\WebBanHangOnline\\WebBanHangOnline\\Areas\\Admin\\Views\\Category"
+  ],
+  "SelectedNode": "\\WebBanHangOnline\\WebBanHangOnline\\Areas\\Admin\\Views\\Category\\Index.cshtml",
+  "PreviewInSolutionExplorer": false
+}

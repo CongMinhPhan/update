@@ -223,3 +223,7 @@ D:\Tài liệu học tập\Sản phẩm _ BTL\Website\WebBanHangOnline\WebBanHan
 D:\Tài liệu học tập\Sản phẩm _ BTL\Website\WebBanHangOnline\WebBanHangOnline\obj\Debug\WebBanHangOnline.dll
 D:\Tài liệu học tập\Sản phẩm _ BTL\Website\WebBanHangOnline\WebBanHangOnline\obj\Debug\WebBanHangOnline.pdb
 D:\Tài liệu học tập\Sản phẩm _ BTL\Website\WebBanHangOnline\WebBanHangOnline\obj\Debug\WebBanHangOnline.Migrations.UpdateNews.resources
+D:\Website\WebBanHangOnline\WebBanHangOnline\obj\Debug\WebBanHangOnline.Migrations.UpdateAction.resources
+D:\Website\WebBanHangOnline\WebBanHangOnline\obj\Debug\WebBanHangOnline.Migrations.UpdateActions.resources
+D:\Website\WebBanHangOnline\WebBanHangOnline\bin\CKFinder.dll
+D:\Website\WebBanHangOnline\WebBanHangOnline\bin\CKFinder.pdb

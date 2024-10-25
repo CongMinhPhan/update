@@ -4,6 +4,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Web;
+using System.Web.Mvc;
 
 namespace WebBanHangOnline.Models.EF
 {
@@ -15,6 +16,7 @@ namespace WebBanHangOnline.Models.EF
         public int Id { get; set; }
         public string Title { get; set; }
         public string Alias { get; set; }
+        [AllowHtml]
         public string Detail { get; set; }
         public string Description { get; set; }
         public string Image { get; set; }
@@ -22,6 +24,7 @@ namespace WebBanHangOnline.Models.EF
         public string SeoTitle { get; set; }
         public string SeoDescription { get; set; }
         public string SeoKeyword { get; set; }
+        public bool IsActive {  get; set; }
         public virtual Category Category { get; set; }
 
     }

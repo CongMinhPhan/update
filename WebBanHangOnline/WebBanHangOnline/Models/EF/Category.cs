@@ -17,7 +17,7 @@ namespace WebBanHangOnline.Models.EF
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int Id { get; set; }
-        [Required(ErrorMessage ="ten danh muc trong")]
+        [Required(ErrorMessage = "ten danh muc trong")]
         [StringLength(50)]
         public string Title { get; set; }
         public string Alias { get; set; }
@@ -29,6 +29,7 @@ namespace WebBanHangOnline.Models.EF
         public string SeoDescription { get; set; }
         [StringLength(50)]
         public string SeoKeyword { get; set; }
+        public bool IsActive { get; set; }
         public ICollection<News> News { get; set; }
         public ICollection<Posts> Posts { get; set; }
 

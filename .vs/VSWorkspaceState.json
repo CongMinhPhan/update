@@ -2,12 +2,8 @@
   "ExpandedNodes": [
     "",
     "\\WebBanHangOnline",
-    "\\WebBanHangOnline\\WebBanHangOnline",
-    "\\WebBanHangOnline\\WebBanHangOnline\\Areas\\Admin\\Controllers",
-    "\\WebBanHangOnline\\WebBanHangOnline\\Areas\\Admin\\Views\\Category",
-    "\\WebBanHangOnline\\WebBanHangOnline\\Models",
-    "\\WebBanHangOnline\\WebBanHangOnline\\Models\\EF"
+    "\\WebBanHangOnline\\WebBanHangOnline"
   ],
-  "SelectedNode": "\\WebBanHangOnline\\WebBanHangOnline\\Models\\EF\\Posts.cs",
+  "SelectedNode": "\\WebBanHangOnline\\WebBanHangOnline.sln",
   "PreviewInSolutionExplorer": false
 }

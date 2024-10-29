@@ -17,9 +17,15 @@ namespace WebBanHangOnline.Models.EF
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int Id { get; set; }
+        [Required]
+        [StringLength(150)]
         public string Title { get; set; }
+        [Required]
+        [StringLength(150)]
+        public string Alias {  get; set; }
         public string Description { get; set; }
-        public int Icon { get; set; }
+        [StringLength(100)]
+        public string Icon { get; set; }
         public string SeoTitle { get; set; }
         public string SeoDescription { get; set; }
         public string SeoKeyword { get; set; }

@@ -227,3 +227,10 @@ D:\Website\WebBanHangOnline\WebBanHangOnline\obj\Debug\WebBanHangOnline.Migratio
 D:\Website\WebBanHangOnline\WebBanHangOnline\obj\Debug\WebBanHangOnline.Migrations.UpdateActions.resources
 D:\Website\WebBanHangOnline\WebBanHangOnline\bin\CKFinder.dll
 D:\Website\WebBanHangOnline\WebBanHangOnline\bin\CKFinder.pdb
+D:\Website\WebBanHangOnline\WebBanHangOnline\obj\Debug\WebBanHangOnline.Migrations.UpdatePosts.resources
+D:\Website\WebBanHangOnline\WebBanHangOnline\obj\Debug\WebBanHangOnline.Migrations.UpdatePost.resources
+D:\Website\WebBanHangOnline\WebBanHangOnline\bin\PagedList.dll
+D:\Website\WebBanHangOnline\WebBanHangOnline\bin\PagedList.Mvc.dll
+D:\Website\WebBanHangOnline\WebBanHangOnline\bin\PagedList.xml
+D:\Website\WebBanHangOnline\WebBanHangOnline\bin\PagedList.Mvc.xml
+D:\Website\WebBanHangOnline\WebBanHangOnline\obj\Debug\WebBanHangOnline.Migrations.UpdateProductCate.resources

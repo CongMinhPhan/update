@@ -2,8 +2,12 @@
   "ExpandedNodes": [
     "",
     "\\WebBanHangOnline",
-    "\\WebBanHangOnline\\WebBanHangOnline"
+    "\\WebBanHangOnline\\WebBanHangOnline",
+    "\\WebBanHangOnline\\WebBanHangOnline\\Areas",
+    "\\WebBanHangOnline\\WebBanHangOnline\\Areas\\Admin",
+    "\\WebBanHangOnline\\WebBanHangOnline\\Areas\\Admin\\Views",
+    "\\WebBanHangOnline\\WebBanHangOnline\\Areas\\Admin\\Views\\News"
   ],
-  "SelectedNode": "\\WebBanHangOnline\\WebBanHangOnline.sln",
+  "SelectedNode": "\\WebBanHangOnline\\WebBanHangOnline\\Areas\\Admin\\Views\\News\\Index.cshtml",
   "PreviewInSolutionExplorer": false
 }

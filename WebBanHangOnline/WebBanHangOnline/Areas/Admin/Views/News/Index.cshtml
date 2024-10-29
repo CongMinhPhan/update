@@ -1,4 +1,6 @@
-﻿﻿@model IEnumerable<WebBanHangOnline.Models.EF.News>
+﻿﻿@model PagedList.PagedList<WebBanHangOnline.Models.EF.News>
+@using PagedList.Mvc;
+@using PagedList;
 @{
     ViewBag.Title = "Danh sach tin tuc";
     Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
@@ -49,6 +51,19 @@
             </div>
         </div>
         <div class="card-body">
+            <div class="row">
+                <div class="col-6">
+                    @using (Html.BeginForm("index", "News", FormMethod.Get, new { }))
+                    {
+                        <div class="input-group input-group-sm">
+                            @Html.TextBox("Searchtext")
+                            <span class="input-group-append">
+                                <button type="submit" class="btn btn-info btn-flat">Tim kiem</button>
+                            </span>
+                        </div>
+                    }
+                </div>
+            </div>
             <table class="table table-hover">
                 <thead>
                     <tr>
@@ -58,21 +73,20 @@
                         <th>Tieu de</th>
                         <th>Ngay tao</th>
                         <th>Hien thi</th>
-                        <th>Thu Tu</th>
+                        <th style="width:150px;" ></th>
                     </tr>
                 </thead>
                 <tbody>
                     @if (Model != null && Model.Any())
                     {
-                        var i = 1;
-
+                        var i = ((ViewBag.Page-1)*ViewBag.PageSize)+1;
                         foreach (var item in Model)
                         {
                             var strCheck = item.IsActive ? "<i class = 'fa fa-check text-success'></i>" : "<i class = 'fas fa-times text-danger'></i>";
                             <tr id="trow_@item.Id">
                                 <td><input type="checkbox" class="cbkItem" value="@item.Id" /></td>
                                 <td>@i</td>
-                                
+
                                 <td>
                                     <img src="@item.Image" width="50" />
                                 </td>
@@ -97,6 +111,12 @@
                     }
                 </tbody>
             </table>
+            <div class="row">
+                <div class="col-6"></div>
+                <div class="col-6" style="text-align:right">
+                    @Html.PagedListPager(Model, page => Url.Action("Index", new { page }))
+                </div>
+            </div>
         </div>
         <!-- /.card-body -->
         <div class="card-footer">
@@ -114,7 +134,7 @@
             $('body').on('click', '#BtnDeleteAll', function (e) {
                 e.preventDefault();
                 var str = "";
-                
+
                 var checkbox = $(this).parents('.card').find('tr td input:checkbox');
                 var i = 0;
                 checkbox.each(function () {
@@ -123,14 +143,14 @@
                         var _id = $(this).val();
                         if (i === 0) {
                             str += _id;
-                            
+
                         } else {
-                            str += "," +_id;
+                            str += "," + _id;
                         }
                         i++;
                     } else {
                         checkbox.attr('selected', '');
-                       
+
                     }
                 });
                 if (str.length > 0) {
@@ -180,7 +200,7 @@
             $('body').on('click', '.btnActive', function (e) {
                 e.preventDefault();
                 var btn = $(this);
-                var id = btn.data("id");  
+                var id = btn.data("id");
                 $.ajax({
                     url: '/admin/news/IsActive',
                     type: 'POST',
